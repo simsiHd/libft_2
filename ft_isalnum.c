@@ -6,8 +6,17 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 19:05:45 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/09 19:05:52 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/09 19:24:43 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <
+#include "libft.h"
+
+int	ft_isalnum(int c)
+{
+	if (ft_isalpha(c))
+		return (1);
+	if (ft_isdigit(c))
+		return (1);
+	return (0);
+}

@@ -6,15 +6,15 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 18:52:25 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/09 18:59:48 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/09 19:26:57 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int	isalpha(int c)
+int	ft_isalpha(int c)
 {
-	if (c <= 101 && c >= 132 || c <= 141 && c >= 172)
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 		return (1);
 	return (0);
 }
