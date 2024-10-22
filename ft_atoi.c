@@ -1,35 +1,44 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/13 15:29:02 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/22 15:40:51 by dsimsek          ###   ########.fr       */
+/*   Created: 2024/10/22 15:14:00 by dsimsek           #+#    #+#             */
+/*   Updated: 2024/10/22 15:47:11 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
+static int	ft_isspace(char s)
 {
-	size_t	d;
-	size_t	s;
+	return (s == ' ' || s == '\t' || s == '\r'
+		|| s == '\n' || s == '\v' || s == '\f');
+}
 
-	if (dst == NULL && src == NULL)
-		return (0);
-	d = ft_strlen(dst);
-	s = ft_strlen(src);
-	if (d >= dstsize)
-		return (dstsize + ft_strlen(src));
-	dstsize = dstsize - d;
-	dst += d;
-	while (*src && dstsize > 1)
+int	ft_atoi(const char *str)
+{
+	int	i;
+	int	s;
+	int	r;
+
+	i = 0;
+	s = 1;
+	r = 0;
+	while (ft_isspace(str[i]))
+		i++;
+	if (str[i] == '+' || str[i] == '-')
 	{
-		*dst++ = *src++;
-		dstsize--;
+		if (str[i] == '-')
+			s = -1;
+		i++;
 	}
-	*dst = '\0';
-	return (d + s);
+	while (ft_isdigit(str[i]))
+	{
+		r = r * 10 + (str[i] - '0');
+		i++;
+	}
+	return ((int)(r * s));
 }
