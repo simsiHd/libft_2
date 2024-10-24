@@ -6,7 +6,7 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 18:49:41 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/22 15:43:21 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/22 16:35:25 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,5 +36,7 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memchr(const void *s, int c, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
-int	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
+void	*ft_calloc(size_t count, size_t size);
+char	*ft_strdup(const char *s1);
 #endif
