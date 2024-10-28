@@ -6,7 +6,7 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 18:49:41 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/24 13:10:12 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/28 15:26:39 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,4 +44,8 @@ void	ft_putstr_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+int		ft_memcmp(const void *s1, const void *s2, size_t n);
 #endif
