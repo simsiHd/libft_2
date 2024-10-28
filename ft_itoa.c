@@ -6,7 +6,7 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/28 15:47:52 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/28 17:10:45 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/28 17:12:17 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,8 +54,3 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
-// int main(int n)
-// {
-// 	int c = 200;
-// 	printf("%s\n", ft_itoa(c))
-// }
