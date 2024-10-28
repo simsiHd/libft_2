@@ -6,7 +6,7 @@
 /*   By: dsimsek <dsimsek@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 18:49:41 by dsimsek           #+#    #+#             */
-/*   Updated: 2024/10/28 15:26:39 by dsimsek          ###   ########.fr       */
+/*   Updated: 2024/10/28 16:46:41 by dsimsek          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,6 @@ char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+char	*ft_itoa(int n);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif
